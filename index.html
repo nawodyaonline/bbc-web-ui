@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B B C</title>
     <style>
-        .icon{
+        .icon {
             height: 25px;
 
         }
@@ -17,38 +17,65 @@
             width: 90px;
             border-right: 1px gray solid;
         }
-        .search{
+
+        .search {
             clear: both;
         }
-        .catogory{
+
+        .catogory {
             margin-top: 10px;
             width: 100%;
             height: 110px;
             background-color: darkred;
         }
-        h1{
-            color:aliceblue;
+
+        h1 {
+            color: aliceblue;
             padding: 10px 30px;
             float: left;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-        .side-bar{
-            float:right;
+
+        .side-bar {
+            float: right;
             width: 30%;
             height: 1800px;
-            background-color: beige;
-            border-left:1px black solid;
+            /* background-color: bei; */
+            border-left: 1px black solid;
             padding-left: 10px;
+            position: relative;
+            top: 20px;
         }
-        .h3s{
+
+        .h3s {
             text-align: center;
             margin: 25px 10px;
-            padding:10px;
+            padding: 10px;
             color: aliceblue;
             font-size: 25px;
             float: right;
-            border: 2px white solid   
-            
+            border: 2px white solid
+        }
+
+        img {
+            float: left;
+
+        }
+
+        .card {
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .content {
+            align-content: center;
+            margin: 10px;
+            /* border: 1px rebeccapurple solid; */
+            position: relative;
+            width: 65%;
+            height: 10000px;
+            top: 20px;
         }
     </style>
 </head>
@@ -56,38 +83,84 @@
 <body>
 
     <div class="top"> <img class="icon" src="image/bbc_logo.png" alt="bbc-loging"> </div>
-    <div class="top" >
+    <div class="top">
         <img class="icon" src="image/loging.png" alt="bbc-loging">
         Sign in
     </div>
     <div class="top">
-       <center>News</center>
+        <center>News</center>
     </div>
     <div class="top">
         <center>sport</center>
-     </div>
-     <div class="top">
+    </div>
+    <div class="top">
         <center>Weather</center>
-     </div>
-     <div class="top">
+    </div>
+    <div class="top">
         <center>iPlayer</center>
-     </div>
-     <div class="top">
+    </div>
+    <div class="top">
         <center>TV</center>
-     </div>
-<!-- Top bar is over -->
-     <div class="search"><input type="text" placeholder="Search"></div>
-     <!-- search bar is over -->
+    </div>
+    <!-- Top bar is over -->
+    <div class="search"><input type="text" placeholder="Search"></div>
+    <!-- search bar is over -->
 
-     <!-- catogory bar is starting -->
-     <div class="catogory">         
-         <div ><h1>NEWS</h1></div>
-         <div class="h3s"> <center>Find local news</center> </div>
+    <!-- catogory bar is starting -->
+    <div class="catogory">
+        <div>
+            <h1>NEWS</h1>
+        </div>
+        <div class="h3s">
+            <center>Find local news</center>
+        </div>
     </div>
     <!-- The detail section of page will start -->
     <div class="side-bar">
-        <h2>Watch/Listen</h2>
+        <h3>Watch/Listen</h3>
+
+        <div class="card">
+            <img src="image/side/1.jpg" alt="article one" srcset="" width="150px">
+            <h2>UK science chief<br>backs blockchain</h2>
+            <p>19 January 2016</p>
+        </div>
+
+        <div class="card">
+            <img src="image/side/2.jpg" alt="article one" srcset="" width="150px">
+            <h2>Drone register gives<br>'accountability'</h2>
+            <p>19 January 2016</p>
+        </div>
+
+        <div class="card">
+            <img src="image/side/3.jpg" alt="article one" srcset="" width="150px">
+            <h2>SpaceX rocket<br>explodes during<br>landing</h2>
+            <p>19 January 2016</p>
+        </div>
     </div>
+
+    <!-- Website body start from here -->
+    <div class="content">
+        <h2 style="text-decoration: underline;">Technology</h2>
+        <br>
+        <h1 style="color: black;float: none;"> Asda bug exposed payment details</h1>
+        <br>
+        <img style="float: right;" src="image/side/2.jpg" alt="" srcset="" width="400px">
+
+        <div style="width:300px;padding:30px;height: 300px;margin: 10px 10px;">
+            <h4 style="text-decoration: justify;">A paragraph is a self-contained unit of a discourse in writing dealing
+                with a particular point or idea. A paragraph consists of one or more sentences. Though not required by
+                the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize
+                longer prose. Wikipedia</h4>   
+                <p>29 January 2021 | Technology</p>
+                <p style="color: red;">________</p>             
+                <p>Surveillance firm hit in hack attack</p>
+                <p>eBay flaw has existed for months</p>
+        </div>
+       
+
+
+    </div>
+
 </body>
 
 </html>
